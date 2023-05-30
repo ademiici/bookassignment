@@ -36,7 +36,7 @@ function addAll(e){
     // delete an input
     let deleteButton = document.createElement("button");
     deleteButton.innerHTML = "Delete";
-    deleteButton.className = "delete-btn btn btn-outline-danger";
+    deleteButton.className = "delete-btn btn btn-outline-danger float-end";
 
     deleteButton.addEventListener("click", function() {
       let row = this.parentNode.parentNode;
