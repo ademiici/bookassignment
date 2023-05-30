@@ -1,7 +1,5 @@
-
-
-
-const form = document.getElementById("bookform")
+// bookform declaration
+const form = document.getElementById("bookform");
 
 function loadAllEvent() {
     // submit 
@@ -21,7 +19,7 @@ function addAll(e){
     let isbn = document.querySelector("#isbn").value;
     let amount = document.querySelector("#amount").value;
 
-    let table = document.querySelector("#bookTable");
+    let table = document.querySelector("table");
     let newRow = table.insertRow(-1);
 
     let authorCell = newRow.insertCell(0);
@@ -38,7 +36,7 @@ function addAll(e){
     // delete an input
     let deleteButton = document.createElement("button");
     deleteButton.innerHTML = "Delete";
-    deleteButton.className = "delete-btn btn btn-outline-danger float-end";
+    deleteButton.className = "delete-btn btn btn-outline-danger";
 
     deleteButton.addEventListener("click", function() {
       let row = this.parentNode.parentNode;
@@ -50,9 +48,9 @@ function addAll(e){
     clearForm();
 }
 // delete all
-    function clearForm() {
-        document.querySelector("#author").value = "";
-        document.querySelector("#title").value = "";
-        document.querySelector("#isbn").value = "";
-        document.querySelector("#amount").value = "";
-    }
+function clearForm() {
+    document.querySelector("#author").value = "";
+    document.querySelector("#title").value = "";
+    document.querySelector("#isbn").value = "";
+    document.querySelector("#amount").value = "";
+}

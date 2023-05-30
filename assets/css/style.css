@@ -3,10 +3,11 @@
     color: rgb(213, 190, 190);
     
 }
+/* form container */
 .container{
   background: url(/assets/images/low-poly-grid-haikei\ \(3\).png);
 }
-
+/* button utilities */
 .delete-btn{
     background-color: #d12518;
     border: none;
@@ -22,4 +23,9 @@
 .btn:hover{
     transition: all 2s ease;
     transform: scale(1.18);
+}
+
+/* table head */
+thead {
+  border: none !important;
 }
